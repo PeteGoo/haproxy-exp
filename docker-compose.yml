@@ -5,6 +5,7 @@ haproxy:
     - node2
   ports:
     - "8080:8080"
+    - "8090:8090"
 
 node1:
   image: petegoo/node-express-sample
