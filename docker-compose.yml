@@ -1,0 +1,13 @@
+haproxy:
+  build: .
+  links:
+    - node1
+    - node2
+  ports:
+    - "8080:8080"
+
+node1:
+  image: petegoo/node-express-sample
+
+node2:
+  image: petegoo/node-express-sample
